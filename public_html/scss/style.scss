@@ -1,7 +1,6 @@
-p {
-    color: #081472;
-}
-
-as{
-    
-}
+@import "abstracts/__export__.scss";
+@import "base/__export__.scss";
+@import "component/__export__.scss";
+@import "layout/__export__.scss";
+@import "pages/__export__.scss";
+@import "theme/__export__.scss";

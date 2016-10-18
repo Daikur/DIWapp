@@ -117,7 +117,7 @@ panel--cabecera{
 
 
 /*Clase 04/10/2016*/
-.button {
+/*.button {
     display:inline-block;
     text-decoration: none;
     border-radius: 5px;
@@ -190,7 +190,7 @@ panel--cabecera{
 
 .button--warning:focus{
     box-shadow: inset 0px 3px 10px 0px #d96c0d; 
-}
+}*/
 
 .menu__link{
     text-decoration: none;
