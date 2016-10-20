@@ -1,0 +1,38 @@
+.message {
+    background-color: #BDBDBD;
+    border-radius: 4px;
+    padding: 15px 15px;
+    border: 1px solid #848484;
+}
+
+
+
+.message--primary {
+    border: 1px solid #2E6DA4;
+    background-color: #337AB7;
+    color: white;
+}
+
+.message--success {
+    border: 1px solid #D6E9C6;
+    background-color: #DFF0D8;
+    color: #3C763D;
+}
+
+.message--info {
+    border: 1px solid #BCE8F1;
+    background-color: #D9EDF7;
+    color: #31708F;
+}
+
+.message--warning {
+    border: 1px solid #FAEBCC;
+    background-color: #FCF8E3;
+    color: #98713B;
+}
+
+.message--error {
+    border: 1px solid #EBCCD1;
+    background-color: #F2DEDE;
+    color: #A94442;
+}
