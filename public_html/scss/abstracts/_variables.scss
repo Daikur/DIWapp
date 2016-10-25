@@ -1,5 +1,10 @@
-$format-variations:(primary ,#337AB7),
+$functional-variations:(primary ,#337AB7),
                     (success,#5CB85C),
                     (info,#5BC0DE),
                     (warning,#F0AD4E),
                     (error,#D9534F);
+                    
+$size-variations:   (large,20px,10px),
+                    (small,11px,6px),
+                    (extra_small,4px,11px);
+                    

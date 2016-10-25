@@ -8,3 +8,13 @@ and open the template in the editor.
     Author     : alumno
 */
 
+@mixin button-generic-format($color){
+    color:$color;
+    &:focus{
+    box-shadow: inset 0px 3px 10px 0px darken($color,40%);
+
+    }
+    &:hover{
+    background-color: darken($color,20%); 
+    }
+}

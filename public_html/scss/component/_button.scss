@@ -1,30 +1,41 @@
 .button {
+    padding: 8px;
+    @include button-generic-format(white);
+    font-size: 14px;
     display:inline-block;
     text-decoration: none;
     border-radius: 5px;
     align-content: center;
-    padding: 8px;
-    color: white;
-    font-size: 14px;
+    
+     
 }
 
-@each $variacion, $color in $format-variation{
-    .button--#{$variacion}{
-     background-color: $color;
-     border: 1px solid darken( $color, 10% );
-     color:darken( $color, 10% );
-     &:hover{
-         background-color: darken($color,10%); 
-     }
-     
+
+@each $funcion, $color in $functional-variations{
+    .button--#{$funcion}{
+        background-color: $color;
+        border: 1px solid darken( $color,20%);
+        @include button-generic-format(darken($color,10%));
+
+/*        &:focus{
+           box-shadow: inset 0px 3px 10px 0px darken($color,40%);
+
+        }*/
+
+    }
+}
+@each $tamaño, $fsize, $padding in $size-variations{
+    .button--#{$tamaño}{
+        font-size: $fsize;
+        padding: $padding;
     }
 }
 
 
 
-.button--primary{
+/*.button--primary{
     background-color: #337AB7;
-    border: 1px solid #2E6DA4;
+    border: 1px solid #2E6DA4;#
 }
 .button--success{
     background-color: #5CB85C;
@@ -41,10 +52,10 @@
 .button--error{
     background-color: #D9534F;
     border: 1px solid #D43F3A;
-}
+}*/
 
 
-.button--large {
+/*.button--large {
     font-size: 20px;
     padding: 10px;
 }
@@ -56,10 +67,8 @@
     padding: 4px;
     font-size: 11px;
 }
-.button--boton{
-    outline: 0px;
-}
-.button--primary:hover{
+
+/*.button--primary:hover{
     background-color: #2E6DA4;
 
 }
@@ -78,12 +87,12 @@
 .button--error:hover{
     background-color: #D43F3A;
 
-}
+}*/
 
-.button--success:active{
+/*.button--success:active{
     box-shadow: inset 0px 3px 10px 0px #006600;   
 }
 
 .button--warning:focus{
     box-shadow: inset 0px 3px 10px 0px #d96c0d; 
-}
+}*/

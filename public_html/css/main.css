@@ -1,3 +1,12 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20-oct-2016, 9:23:58
+    Author     : alumno
+*/
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -453,33 +462,82 @@ html {
   box-sizing: inherit; }
 
 .button {
+  padding: 8px;
+  color: white;
+  font-size: 14px;
   display: inline-block;
   text-decoration: none;
   border-radius: 5px;
-  align-content: center;
-  padding: 8px;
-  color: white;
-  font-size: 14px; }
+  align-content: center; }
+  .button:focus {
+    box-shadow: inset 0px 3px 10px 0px #999999; }
+  .button:hover {
+    background-color: #cccccc; }
 
 .button--primary {
   background-color: #337AB7;
-  border: 1px solid #2E6DA4; }
+  border: 1px solid #1d4567;
+  color: #285f8f;
+  /*        &:focus{
+           box-shadow: inset 0px 3px 10px 0px darken($color,40%);
+
+        }*/ }
+  .button--primary:focus {
+    box-shadow: inset 0px 3px 10px 0px black; }
+  .button--primary:hover {
+    background-color: #122a3f; }
 
 .button--success {
   background-color: #5CB85C;
-  border: 1px solid #4CAE4C; }
+  border: 1px solid #357935;
+  color: #449d44;
+  /*        &:focus{
+           box-shadow: inset 0px 3px 10px 0px darken($color,40%);
+
+        }*/ }
+  .button--success:focus {
+    box-shadow: inset 0px 3px 10px 0px #060f06; }
+  .button--success:hover {
+    background-color: #255625; }
 
 .button--info {
   background-color: #5BC0DE;
-  border: 1px solid #46B8DA; }
+  border: 1px solid #2390b0;
+  color: #31b0d5;
+  /*        &:focus{
+           box-shadow: inset 0px 3px 10px 0px darken($color,40%);
+
+        }*/ }
+  .button--info:focus {
+    box-shadow: inset 0px 3px 10px 0px #0a2730; }
+  .button--info:hover {
+    background-color: #1b6d85; }
 
 .button--warning {
   background-color: #F0AD4E;
-  border: 1px solid #EEA236; }
+  border: 1px solid #c77c11;
+  color: #ec971f;
+  /*        &:focus{
+           box-shadow: inset 0px 3px 10px 0px darken($color,40%);
+
+        }*/ }
+  .button--warning:focus {
+    box-shadow: inset 0px 3px 10px 0px #3a2405; }
+  .button--warning:hover {
+    background-color: #985f0d; }
 
 .button--error {
   background-color: #D9534F;
-  border: 1px solid #D43F3A; }
+  border: 1px solid #a02622;
+  color: #c9302c;
+  /*        &:focus{
+           box-shadow: inset 0px 3px 10px 0px darken($color,40%);
+
+        }*/ }
+  .button--error:focus {
+    box-shadow: inset 0px 3px 10px 0px #220807; }
+  .button--error:hover {
+    background-color: #761c19; }
 
 .button--large {
   font-size: 20px;
@@ -490,33 +548,69 @@ html {
   padding: 6px; }
 
 .button--extra_small {
-  padding: 4px;
-  font-size: 11px; }
+  font-size: 4px;
+  padding: 11px; }
 
-.button--boton {
-  outline: 0px; }
+/*.button--primary{
+    background-color: #337AB7;
+    border: 1px solid #2E6DA4;#
+}
+.button--success{
+    background-color: #5CB85C;
+    border: 1px solid #4CAE4C;
+}
+.button--info{
+    background-color:#5BC0DE;
+    border: 1px solid #46B8DA;
+}
+.button--warning{
+    background-color: #F0AD4E;
+    border: 1px solid #EEA236;
+}
+.button--error{
+    background-color: #D9534F;
+    border: 1px solid #D43F3A;
+}*/
+/*.button--large {
+    font-size: 20px;
+    padding: 10px;
+}
+.button--small {
+    font-size: 11px;
+    padding: 6px;
+}
+.button--extra_small {
+    padding: 4px;
+    font-size: 11px;
+}
 
-.button--primary:hover {
-  background-color: #2E6DA4; }
+/*.button--primary:hover{
+    background-color: #2E6DA4;
 
-.button--success:hover {
-  background-color: #4CAE4C; }
+}
+.button--success:hover{
+    background-color: #4CAE4C;
 
-.button--info:hover {
-  background-color: #46B8DA; }
+}
+.button--info:hover{
+    background-color: #46B8DA;
 
-.button--warning:hover {
-  background-color: #EEA236; }
+}
+.button--warning:hover{
+    background-color: #EEA236;
 
-.button--error:hover {
-  background-color: #D43F3A; }
+}
+.button--error:hover{
+    background-color: #D43F3A;
 
-.button--success:active {
-  box-shadow: inset 0px 3px 10px 0px #006600; }
+}*/
+/*.button--success:active{
+    box-shadow: inset 0px 3px 10px 0px #006600;   
+}
 
-.button--warning:focus {
-  box-shadow: inset 0px 3px 10px 0px #d96c0d; }
-
+.button--warning:focus{
+    box-shadow: inset 0px 3px 10px 0px #d96c0d; 
+}*/
 .panel {
   box-sizing: border-box;
   box-shadow: 5px 5px 10px #BDBDBD;
