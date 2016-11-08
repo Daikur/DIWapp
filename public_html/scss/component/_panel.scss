@@ -1,113 +1,38 @@
-.panel {
+.panel{
+    font-size: 80%;  
+    font-family: "Lucida Grande",Arial,Verdana,sans-serif;
     box-sizing: border-box;
-    box-shadow: 5px 5px 10px #BDBDBD;
-    border-bottom-right-radius: 4px;
-}
+    border-radius: 5px ;
+    box-shadow: 3px 3px 10px darken(#afbdc9,40%);
 
-.panel--primary{
-    box-shadow: 5px 5px 10px #2E6DA4;
 }
-
-.panel--success {
-    box-shadow: 5px 5px 10px #DFF0D8;
+.panel__header{
+    background-color: #afbdc9;
+    border: 2px solid #5983a5; 
+    padding:10px 15px;
+    color: #5983a5;
+    border-radius: 5px 5px 0px 0px;
 }
-
-.panel--info {
-    box-shadow: 5px 5px 10px #D9EDF7;
-}
-
-.panel--warning {
-    box-shadow: 5px 5px 10px #FCF8E3;
-}
-
-.panel--error{
-    box-shadow: 5px 5px 10px #F2DEDE;
-}
-
-.panel__header {
-    padding: 15px 15px;
-    background-color: #BDBDBD;
-    border: 1px solid #848484;
-    color: white;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px; 
-}
-
-.panel__header--primary {
-    padding: 15px 15px;
-    background-color: #337AB7;
-    border: 1px solid #2E6DA4;
-    color: white;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px; 
-}
-
-.panel__header--success {
-    background-color: #DFF0D8;
-    color: #3C763D;
-    border: 1px solid #D6E9C6;
-}
-
-.panel__header--info {
-    background-color: #D9EDF7;
-    color: #31708F;
-    border: 1px solid #BCE8F1;
-}
-
-.panel__header--warning {
-    background-color: #FCF8E3;
-    color: #98713B;
-    border: 1px solid #FAEBCC; 
-}
-
-.panel__header--error {
-    background-color: #F2DEDE;
-    color: #A94442;
-    border: 1px solid #EBCCD1; 
-}
-
-.panel__body {
-    color: black;
-    border-left: 1px solid #848484;
-    border-right: 1px solid #848484;
-    border-bottom: 1px solid #848484;
-    padding: 10px 15px;
+.panel__body{
+    padding: 15px 15px;    
+    border-radius:0px 0px 5px 5px;
+    border-bottom:2px solid #5983a5; 
+    border-left:2px solid #5983a5; 
+    border-right:2px solid #5983a5; 
     background-color: white;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px; 
 }
-
-.panel__body--primary {
-    color: black;
-    border-left: 1px solid #2E6DA4;
-    border-right: 1px solid #2E6DA4;
-    border-bottom: 1px solid #2E6DA4;
-    padding: 10px 15px;
-    background-color: white;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-}
-
-.panel__body--success {
-    border-left: 1px solid #D6E9C6;
-    border-right: 1px solid #D6E9C6;
-    border-bottom: 1px solid #D6E9C6;
-}
-
-.panel__body--info {
-    border-left: 1px solid #BCE8F1;
-    border-right: 1px solid #BCE8F1;
-    border-bottom: 1px solid #BCE8F1;
-}
-
-.panel__body--warning {
-    border-left: 1px solid #FAEBCC;
-    border-right: 1px solid #FAEBCC;
-    border-bottom: 1px solid #FAEBCC;
-}
-
-.panel__body--error {
-    border-left: 1px solid #EBCCD1;
-    border-right: 1px solid #EBCCD1;
-    border-bottom: 1px solid #EBCCD1;
+@each $functionality, $color in $functional-variations{
+    .panel--#{$functionality}{
+        box-shadow: 3px 3px 10px darken($color,40%); 
+    }
+    .panel__header--#{$functionality}{
+        background-color: $color;
+        border: 2px solid darken($color,20%);
+        color: darken($color,20%);
+    }
+    .panel__body--#{$functionality}{
+        border-bottom: 2px solid darken($color,20%); 
+        border-left: 2px solid darken($color,20%); 
+        border-right: 2px solid darken($color,20%);
+    }
 }
