@@ -1,7 +1,18 @@
 .barra__busqueda__container{
-    background-color: #4D5158;
+    height: 57px;
+    background-color: #4D5158 ;
+    padding:11px;
+    border-right: 0.1px solid #41444A;
+    border-bottom:0.1px solid #41444A;
 }
 
 .barra__busqueda__buscador{
-    height: 30px;
+    color: white;
+    height: 100%;
+    margin-left: 10px;
+}
+
+.barra__busqueda__item{
+    padding:5px;
+    float:left;
 }
